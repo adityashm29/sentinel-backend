@@ -1,0 +1,104 @@
+{
+  data: [
+    {
+      id: "2048271866914083172",
+      edit_history_tweet_ids: [ "2048271866914083172" ],
+      text: "Yeah https://t.co/9wT6ZoLQmM",
+    }, {
+      id: "2048271594120729021",
+      edit_history_tweet_ids: [ "2048271594120729021" ],
+      text: "RT @realDonaldTrump: Saint Michael the Archangel, defend us in battle. Be our defense against the wickedness and snares of the Devil. May G…",
+    },
+    {
+      id: "2048271324577952130",
+      edit_history_tweet_ids: [ "2048271324577952130" ],
+      text: "Major https://t.co/IxkcA421Ss",
+    }, {
+      id: "2048271232047386949",
+      edit_history_tweet_ids: [ "2048271232047386949" ],
+      text: "RT @XFreeze: \"You can make an AI go insane if you force it to believe things that aren't true - AI must be maximally truth-seeking\"\n\n—Elon…",
+    },
+    {
+      id: "2048270511705145692",
+      edit_history_tweet_ids: [ "2048270511705145692" ],
+      text: "RT @BLKMDL3: FSD v14.3.2 has been driving me all over LA tonight.\n\nThis build is f-ing incredible, smooth as butter and it’s fascinating ho…",
+    },
+    {
+      id: "2048270411175956621",
+      edit_history_tweet_ids: [ "2048270411175956621" ],
+      text: "RT @cb_doge: \"Left wing violence is the problem in America. Charlie Kirk was murde*ed by a left wing radical. President was almost kil*ed.…",
+    },
+    {
+      id: "2048270328749576690",
+      edit_history_tweet_ids: [ "2048270328749576690" ],
+      text: "RT @wil_da_beast630: This is true only if you start after 9/11, exclude all BLM rioting, and count all killings by white prison gangs - but…",
+    },
+    {
+      id: "2048270319689879903",
+      edit_history_tweet_ids: [ "2048270319689879903" ],
+      text: "@wil_da_beast630 Exactly",
+    }, {
+      id: "2048246412534600143",
+      edit_history_tweet_ids: [ "2048246412534600143" ],
+      text: "RT @WhiteHouse: \"In light of this evening's events, I ask that all Americans recommit with their hearts in resolving our differences peacef…",
+    },
+    {
+      id: "2048234907965526306",
+      edit_history_tweet_ids: [ "2048234907965526306" ],
+      text: "Indeed it will https://t.co/hXC1n6HxxI",
+    },
+    {
+      id: "2048234603165491423",
+      edit_history_tweet_ids: [ "2048234603165491423" ],
+      text: "RT @visegrad24: It’s astonishing just how big the AfD has grown in Germany.\n\nThe latest INSA poll has the party at a record-high 28%, twice…",
+    },
+    {
+      id: "2048233500151521491",
+      edit_history_tweet_ids: [ "2048233500151521491" ],
+      text: "RT @Scobleizer: This is one you should watch on a big TV.\n\nOne of the most incredible corporate videos I ever have seen and I was with the…",
+    },
+    {
+      id: "2048232203381776749",
+      edit_history_tweet_ids: [ "2048232203381776749" ],
+      text: "RT @StarbaseTX: The road to making life multiplanetary starts right here in Starbase.",
+    },
+    {
+      id: "2048232173518340399",
+      edit_history_tweet_ids: [ "2048232173518340399" ],
+      text: "@Oilfield_Rando @jnnfir 🎯",
+    }, {
+      id: "2048227580050886861",
+      edit_history_tweet_ids: [ "2048227580050886861" ],
+      text: "RT @JeremyTate41: This door in Westminster Abbey is older than most modern nation-states. Made in the 1050s from an English oak, it's the o…",
+    },
+    {
+      id: "2048227167490682887",
+      edit_history_tweet_ids: [ "2048227167490682887" ],
+      text: "@DavidShafer 💯",
+    }, {
+      id: "2048209919317356959",
+      edit_history_tweet_ids: [ "2048209919317356959" ],
+      text: "@InsiderWire Based",
+    }, {
+      id: "2048209658234433719",
+      edit_history_tweet_ids: [ "2048209658234433719" ],
+      text: "@mattvanswol They are willing die to kill the democratically elected president",
+    },
+    {
+      id: "2048154946067984504",
+      edit_history_tweet_ids: [ "2048154946067984504" ],
+      text: "@aaronburnett Starship will profoundly affect the destiny of humanity",
+    },
+    {
+      id: "2048154657483079769",
+      edit_history_tweet_ids: [ "2048154657483079769" ],
+      text: "RT @Starlink: Starlink’s high-speed internet is available in your area.\n\nExperience speeds up to 400+ Mbps to stream your favorite shows an…",
+    }
+  ],
+  meta: {
+    result_count: 20,
+    newest_id: "2048271866914083172",
+    oldest_id: "2048154657483079769",
+    next_token: "7140dibdnow9c7btwoxhoza5tn0vg9yxesk7082rwarll",
+  },
+}

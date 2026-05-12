@@ -16,6 +16,8 @@ const upload = multer({
 })
 
 
+
+
 featureRouter.get("/dashboard",autho,async (req,res)=>{
     const user=await client.user.findUnique({
            //@ts-ignore
@@ -90,8 +92,6 @@ featureRouter.post("/scam-reports",async(req,res)=>{
 
     const {token}=req.body;
      const decodeduser = jwt.verify(token, process.env.JWTSECRET!);
-    
-
     try {
         const reports = await client.scamReport.findMany({
   include: {

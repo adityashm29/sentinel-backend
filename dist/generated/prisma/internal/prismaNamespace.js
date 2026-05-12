@@ -70,7 +70,10 @@ export const AnyNull = runtime.AnyNull;
 export const ModelName = {
     User: 'User',
     ScamReport: 'ScamReport',
-    ReportVote: 'ReportVote'
+    ReportVote: 'ReportVote',
+    InterviewSession: 'InterviewSession',
+    InterviewQuestion: 'InterviewQuestion',
+    InterviewAnswer: 'InterviewAnswer'
 };
 /**
  * Enums
@@ -106,6 +109,32 @@ export const ReportVoteScalarFieldEnum = {
     reportId: 'reportId',
     voteType: 'voteType',
     createdAt: 'createdAt'
+};
+export const InterviewSessionScalarFieldEnum = {
+    id: 'id',
+    userId: 'userId',
+    resumeText: 'resumeText',
+    jobDescription: 'jobDescription',
+    overallScore: 'overallScore',
+    createdAt: 'createdAt'
+};
+export const InterviewQuestionScalarFieldEnum = {
+    id: 'id',
+    sessionId: 'sessionId',
+    question: 'question',
+    category: 'category',
+    order: 'order'
+};
+export const InterviewAnswerScalarFieldEnum = {
+    id: 'id',
+    questionId: 'questionId',
+    transcript: 'transcript',
+    audioUrl: 'audioUrl',
+    score: 'score',
+    feedback: 'feedback',
+    fillerWordCount: 'fillerWordCount',
+    strengths: 'strengths',
+    improvements: 'improvements'
 };
 export const SortOrder = {
     asc: 'asc',

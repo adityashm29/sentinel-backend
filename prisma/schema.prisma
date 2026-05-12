@@ -16,6 +16,7 @@ model User {
 
   reports   ScamReport[]
   votes     ReportVote[]
+  interviews InterviewSession[]
 }
 
 model ScamReport {
@@ -59,5 +60,43 @@ enum VoteType{
   UPVOTE
   DOWNVOTE
 }
+
+model InterviewSession {
+  id              String             @id @default(uuid())
+  userId          String
+  resumeText      String
+  jobDescription  String
+  overallScore    Float?
+  createdAt       DateTime           @default(now())
+
+  user            User               @relation(fields: [userId], references: [id])
+  questions       InterviewQuestion[]
+}
+
+model InterviewQuestion {
+  id           String           @id @default(uuid())
+  sessionId    String
+  question     String
+  category     String?
+  order        Int
+
+  session      InterviewSession @relation(fields: [sessionId], references: [id])
+  answer       InterviewAnswer?
+}
+
+model InterviewAnswer {
+  id              String            @id @default(uuid())
+  questionId      String            @unique
+  transcript      String
+  audioUrl        String?
+  score           Float?
+  feedback        String?
+  fillerWordCount Int               @default(0)
+  strengths       String?
+  improvements    String?
+
+  question        InterviewQuestion @relation(fields: [questionId], references: [id])
+}
+
 
  
