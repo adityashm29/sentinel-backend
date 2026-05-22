@@ -6,7 +6,6 @@ import 'dotenv/config';
 const router = Router();
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const firecrawl = new Firecrawl({ apiKey: process.env.firecrawlKey });
-// ─── Zod schemas ──────────────────────────────────────────────────────────────
 const AgentResultSchema = z.object({
     score: z.number().min(0).max(100),
     summary: z.string(),
@@ -89,7 +88,7 @@ async function callGemini(prompt) {
     const parsed = JSON.parse(raw);
     return AgentResultSchema.parse(parsed);
 }
-// ─── AGENT 1: Profile Consistency ─────────────────────────────────────────────
+// ─── AGENT 1: Profile Consistency ────────
 async function profileConsistencyAgent(user, tweets, postText) {
     const profile = user
         ? `Name: ${user.name}\nUsername: @${user.username}\nBio: ${user.description}\nFollowers: ${user.public_metrics.followers_count}\nFollowing: ${user.public_metrics.following_count}\nTweets: ${user.public_metrics.tweet_count}\nListed: ${user.public_metrics.listed_count}\nCreated At: ${user.created_at}\nVerified: ${user.verified}`
@@ -335,7 +334,7 @@ function getVerdict(score) {
         return { verdict: 'CAUTION', verdictLabel: 'Proceed with caution' };
     return { verdict: 'LIKELY_SCAM', verdictLabel: 'High risk — likely a scam' };
 }
-// ─── ROUTE ────────────────────────────────────────────────────────────────────
+// ─── ROUTE ─────────────
 router.post('/analyze', async (req, res) => {
     try {
         const { url, postText } = req.body;

@@ -132,7 +132,7 @@ async function callGemini(prompt: string): Promise<AgentResult> {
   return AgentResultSchema.parse(parsed);
 }
 
-// ─── AGENT 1: Profile Consistency ─────────────────────────────────────────────
+// ─── AGENT 1: Profile Consistency ────────
 
 async function profileConsistencyAgent(
   user: XUser | null,
@@ -412,7 +412,7 @@ function getVerdict(score: number): { verdict: 'SAFE' | 'CAUTION' | 'LIKELY_SCAM
   return { verdict: 'LIKELY_SCAM', verdictLabel: 'High risk — likely a scam' };
 }
 
-// ─── ROUTE ────────────────────────────────────────────────────────────────────
+// ─── ROUTE ─────────────
 
 router.post('/analyze', async (req, res) => {
   try {
